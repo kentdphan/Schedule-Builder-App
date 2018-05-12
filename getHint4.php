@@ -1,0 +1,33 @@
+<?php
+
+// Array with colors
+$d[] = "Red";
+$d[] = "Orange";
+$d[] = "Yellow";
+$d[] = "Green";
+$d[] = "Blue";
+
+// get the q parameter from URL
+$q = $_REQUEST["q"];
+
+$hint = "";
+
+// lookup all hints from array if $q is different from ""
+if ($q !== "") {
+  $q = strtolower($q);
+  $len=strlen($q);
+  foreach($d as $color) {
+    if (stristr($q, substr($color, 0, $len))) {
+      if ($hint === "") {
+  $hint = $color;
+      } else {
+  $hint .= ", $color";
+      }
+    }
+  }
+}
+
+// Output "no suggestion" if no hint was found or output correct values
+echo $hint === "" ? "no suggestion" : $hint;
+?>
+

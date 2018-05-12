@@ -8,10 +8,49 @@ body {
   min-height: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
+
+table {
+  width: 50%;
+  margin: 0px 0px 0px 300px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+th {
+  background-color: #e7e7e7;
+}
+
+textarea {
+    width: 50%;
+    height: 500px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffb3;
+    resize: none;
+}
+
+#contact a {
+    text-decoration: underline;
+    color: blue;
+}
+
+
 
 .nav a {
   background-color: #e7e7e7;
@@ -118,19 +157,6 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-table {
-  width: 50%;
-  margin: 0px 0px 0px 300px;
-}
-
-th, td {
-  padding: 10px;
-}
-
-th {
-  background-color: #e7e7e7;
-}
-
 .addEvent {
   color: transparent;
   border: none;
@@ -141,17 +167,6 @@ th {
   color: white;
   background-color: #99c2ff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-textarea {
-    width: 50%;
-    height: 500px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #ffffb3;
-    resize: none;
 }
 
 #textarea {
@@ -186,8 +201,21 @@ textarea {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-* {box-sizing: border-box;}
-ul {list-style-type: none;}
+.addEventButton input{
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    margin: 0px 16px 34px;
+    text-align: center;
+    font-weight: bold;
+    width: 20%;
+    clear: both;
+}
+
+.addEventButton input:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .month {
     padding: 70px 25px;
@@ -252,3 +280,35 @@ ul {list-style-type: none;}
     background: #1abc9c;
     color: white !important
 }
+
+.addNewEvent a {
+    background-color: #1abc9c;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    margin: 0px 16px 34px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.addNewEvent a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    width: 85%;
+    float: right;
+}
+
+#submission {
+    margin-left: 200px;
+}
+
+#submission input {
+    width: 75px;
+    float: left;
+    background-color: #DCDCDC;
+    border: 1px solid;
+}
+
+

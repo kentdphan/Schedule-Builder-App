@@ -1,0 +1,31 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>User's Profile</title>
+    <link rel="stylesheet" href="style/styles.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"/>
+    <script type="text/javascript" src="script/d5.js"></script>
+  </head>
+  
+  <body onload="load_fill()">
+    <h3>Customize your Profile</h3>
+    <p>Please fill in all mandatory information denoted by an asterisk.</p>
+    <form name="textForm" method="post" action="#" onsubmit="return submit_fill()" >
+      <p>*Job: <input type="text" id="job" name="text_job"/></p>
+      <p>*Birthday: <input type="text" id="birthday" name="text_birthday"/></p>
+      <p>*City: <input type="text" id="city" name="text_city"/></p>
+      <p>*State: <input type="text" id="state" name="text_state"/></p>
+      <p>*County: <input type="text" id="county" name="text_county"/></p>
+      <p>*Phone number: <input type="text" id="phone" name="text_phoneNumber"/></p>
+      <p>*Website: <input type="text" id="website" name="text_website"/></p>
+      <div id="submission">
+	<p><input type="submit" value="Submit"/></p>
+	<p><input type="reset" value="Reset"/></p>
+      </div>
+    </form>
+  </body>
+</html>
